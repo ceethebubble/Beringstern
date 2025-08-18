@@ -72,3 +72,9 @@ global.room = room
 if not global.debug global.gameTime = current_hour + (current_minute / 60)
 
 global.maxhp = 60 + global.toughness * 20
+
+if weather = "rain"
+{
+	weather = "raining"
+	alarm[0] = 0.2 * room_speed
+}
