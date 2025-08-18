@@ -23,25 +23,10 @@ else
 
 //-------------
 if (keyboard_check_pressed(vk_escape)) {
-    // Resize the window to a smaller size (e.g., 200x200)
-    window_set_size((window_get_width()) + ((200 - window_get_width())) / 4, (window_get_height()) + ((200 - window_get_height())) / 4);
-
-    // Optional: Pause briefly to let the resize effect be noticeable
     alarm[0] = room_speed / 3; // Set a brief delay using an alarm (e.g., 0.5 seconds)
 }
 
-if file_exists("mail inbox 1 - larry.bstnm")
-{
-	show_message("Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry Larry ")
-	file_delete("mail inbox 1 - larry.bstnm")
-	game_end()
-}
-
-
-
-
-
-//MAIL THING
+//MAIL!
 
 // Folder where mail files are stored
 var _mail_folder = "mail/";

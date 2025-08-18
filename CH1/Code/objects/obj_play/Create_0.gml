@@ -110,3 +110,6 @@ if (!file_exists("main.ini"))
 	ini_write_real("Menu", "Debug", 0);
 	ini_close();
 }
+
+surface_resize(application_surface, 1366, 768);
+if !instance_exists(obj_borders) instance_create_depth(0,0,0,obj_borders)

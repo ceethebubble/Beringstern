@@ -18,16 +18,3 @@ var draw_y = (win_h - base_h * scale) * 0.5;
 draw_surface_ext(application_surface, draw_x, draw_y, scale, scale, 0, c_white, 1);
 
 shader_reset()
-
-// --- Draw borders ---
-if (win_w / win_h > base_w / base_h) {
-	// Window is wider → vertical bars on left/right
-	var bar_w = (win_w - base_w * scale) * 0.5;
-	draw_sprite_stretched(spr_borders, 0, 0, 0, bar_w, win_h);              // Left bar
-	draw_sprite_stretched(spr_borders, 0, win_w - bar_w, 0, bar_w, win_h);  // Right bar
-} else if (win_w / win_h < base_w / base_h) {
-	// Window is taller → horizontal bars on top/bottom
-	var bar_h = (win_h - base_h * scale) * 0.5;
-	draw_sprite_stretched(spr_borders, 0, 0, 0, win_w, bar_h);              // Top bar
-	draw_sprite_stretched(spr_borders, 0, 0, win_h - bar_h, win_w, bar_h);  // Bottom bar
-}

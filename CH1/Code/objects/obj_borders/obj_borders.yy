@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_camera",
+  "%Name":"obj_borders",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":75,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_camera",
+  "name":"obj_borders",
   "overriddenProperties":[],
   "parent":{
     "name":"game",
     "path":"folders/Objects/game.yy",
   },
   "parentObjectId":null,
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -31,9 +32,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_gui_camera",
-    "path":"sprites/spr_gui_camera/spr_gui_camera.yy",
+    "name":"spr_borders",
+    "path":"sprites/spr_borders/spr_borders.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

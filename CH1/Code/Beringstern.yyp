@@ -172,6 +172,7 @@
     {"id":{"name":"obj_block_larry","path":"objects/obj_block_larry/obj_block_larry.yy",},},
     {"id":{"name":"obj_block_tree","path":"objects/obj_block_tree/obj_block_tree.yy",},},
     {"id":{"name":"obj_block_university","path":"objects/obj_block_university/obj_block_university.yy",},},
+    {"id":{"name":"obj_borders","path":"objects/obj_borders/obj_borders.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_character","path":"objects/obj_character/obj_character.yy",},},
     {"id":{"name":"obj_construction_paper","path":"objects/obj_construction_paper/obj_construction_paper.yy",},},
