@@ -1,0 +1,10 @@
+global.char_index = 0;
+character = "bubble"
+CHARMAX = 2
+run = spr_player_run
+left = spr_player_left_right
+right = spr_player_left_right
+up = spr_player_up
+sleep = spr_player_sleep
+get_up = spr_player_get_up
+down = spr_player_down

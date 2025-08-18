@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_game_over",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":7.331723,
+  "name":"sfx_game_over",
+  "parent":{
+    "name":"health",
+    "path":"folders/Sounds/sfx/game/health.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_game_over.ogg",
+  "type":0,
+  "volume":1.0,
+}

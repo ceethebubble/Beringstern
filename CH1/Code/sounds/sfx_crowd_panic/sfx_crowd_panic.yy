@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_crowd_panic",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":135.99345,
+  "name":"sfx_crowd_panic",
+  "parent":{
+    "name":"cutscene",
+    "path":"folders/Sounds/sfx/cutscene.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_crowd_panic.mp3",
+  "type":0,
+  "volume":0.45,
+}

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"vl_enemy_1_01",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":3.6869614,
+  "name":"vl_enemy_1_01",
+  "parent":{
+    "name":"1",
+    "path":"folders/Sounds/voice_lines/enemy/1.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"vl_enemy_1_01.ogg",
+  "type":0,
+  "volume":1.0,
+}

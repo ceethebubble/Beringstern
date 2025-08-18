@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"msc_wildlife",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":14.812494,
+  "name":"msc_wildlife",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"msc_wildlife.ogg",
+  "type":0,
+  "volume":1.0,
+}

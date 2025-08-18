@@ -1,0 +1,12 @@
+{
+  "sprite": "spr_dialog_alex",
+  "char_name": "Alex the Bubble",
+  "scale": 1,
+  "xOffset": 0,
+  "yOffset": 0,
+  "expressions": [
+    {"name": "default","index": 0},
+    {"name": "angry","index": 1},
+    {"name": "sad","index": 2}
+  ]
+}

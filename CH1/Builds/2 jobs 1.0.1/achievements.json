@@ -1,0 +1,44 @@
+{
+	"Worker I":
+	{
+		"text": "Reach level 1.",
+		"id": 1
+	}
+	"Worker II":
+	{
+		"text": "Reach level 2.",
+		"id": 2
+	}
+	"Worker III":
+	{
+		"text": "Reach level 3.",
+		"id": 3
+	}
+	"Worker IV":
+	{
+		"text": "Reach level 4.",
+		"id": 4
+	}
+	"Worker V":
+	{
+		"text": "Reach level 5.",
+		"id": 5
+	}
+
+	"Retired":
+	{
+		"text": "Beat Chapter 1 with Level 1 or less.",
+		"id": 6
+	}
+	"God Worker":
+	{
+		"text": "Beat Chapter 1 with Level 5.",
+		"id": 7
+	}
+
+	"True Life":
+	{
+		"text": "Beat the game with the Persevered Heaven ending.",
+		"id": 6
+	}
+}

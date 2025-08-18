@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"vl_larry_4B",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":2.141315,
+  "name":"vl_larry_4B",
+  "parent":{
+    "name":"larry",
+    "path":"folders/Sounds/voice_lines/larry.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"vl_larry_4B.wav",
+  "type":0,
+  "volume":1.0,
+}

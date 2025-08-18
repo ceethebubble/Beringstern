@@ -1,0 +1,2 @@
+audio_play_sound(sfx_dong,0,false)
+if avatar_index > 1 then avatar_index = avatar_index - 1;

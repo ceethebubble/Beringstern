@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bubble.png">
+	<!-- Created with Adobe Animate version 24.0.1.329 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="angry-happy0000" x="35" y="35" width="109" height="101"/>
+	<SubTexture name="angry-mid0000" x="179" y="35" width="109" height="101"/>
+	<SubTexture name="angry-sad0000" x="323" y="35" width="109" height="101"/>
+	<SubTexture name="confused0000" x="467" y="35" width="109" height="101"/>
+	<SubTexture name="happy0000" x="611" y="35" width="109" height="101"/>
+	<SubTexture name="mid0000" x="755" y="35" width="109" height="101"/>
+	<SubTexture name="sad0000" x="35" y="171" width="109" height="101"/>
+	<SubTexture name="sad-happy0000" x="179" y="171" width="109" height="101"/>
+	<SubTexture name="sad-mid0000" x="323" y="171" width="109" height="101"/>
+	<SubTexture name="sad-sad0000" x="467" y="171" width="109" height="101"/>
+</TextureAtlas>

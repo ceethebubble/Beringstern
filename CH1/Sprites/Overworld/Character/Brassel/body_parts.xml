@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="body_parts.png">
+	<!-- Created with Adobe Animate version 24.0.1.329 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="brassel0000" x="35" y="35" width="50" height="57"/>
+	<SubTexture name="brassel0001" x="35" y="127" width="50" height="57"/>
+	<SubTexture name="brassel0002" x="120" y="35" width="50" height="57"/>
+	<SubTexture name="brassel0003" x="120" y="127" width="50" height="57"/>
+</TextureAtlas>

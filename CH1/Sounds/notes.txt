@@ -1,0 +1,6 @@
+FL studio sfx
+
+- use beepmap for a creepy effect
+- synth special, then Harmor for a chase song
+- FL slayer is guitar
+- notes for enemy notes is in the enemies folder

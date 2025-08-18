@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdr_player_custom",
+  "name":"shdr_player_custom",
+  "parent":{
+    "name":"player",
+    "path":"folders/Shaders/player.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

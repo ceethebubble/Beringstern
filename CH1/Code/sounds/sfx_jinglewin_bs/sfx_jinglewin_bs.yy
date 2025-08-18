@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_jinglewin_bs",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":5.0107937,
+  "name":"sfx_jinglewin_bs",
+  "parent":{
+    "name":"win screen",
+    "path":"folders/Sounds/sfx/game/battle/win screen.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_jinglewin_bs.ogg",
+  "type":0,
+  "volume":1.0,
+}

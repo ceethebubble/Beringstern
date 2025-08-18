@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdr_normal",
+  "name":"shdr_normal",
+  "parent":{
+    "name":"dynamic",
+    "path":"folders/Shaders/dynamic.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

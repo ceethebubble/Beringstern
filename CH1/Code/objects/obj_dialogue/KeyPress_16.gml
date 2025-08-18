@@ -1,0 +1,1 @@
+if !autoskip typetext = true;

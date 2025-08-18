@@ -1,0 +1,13 @@
+{
+  "sprite": "spr_dialog_test_object",
+  "char_name": "Test Sphere",
+  "scale": 0.9,
+  "xOffset": 10,
+  "yOffset": 0,
+  "expressions": [
+    {"name": "angy","index": 0},
+    {"name": "happy","index": 1},
+	{"name": "default","index": 2},
+	{"name": "sad","index": 3}
+  ]
+}

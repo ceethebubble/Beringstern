@@ -1,0 +1,13 @@
+{
+  "sprite": "spr_dialog_ellie",
+  "char_name": "Ellie the Bubble",
+  "scale": 0.12,
+  "xOffset": 5,
+  "yOffset": 0,
+  "expressions": [
+    {"name": "default","index": 0},
+    {"name": "wink","index": 1},
+	{"name": "angry","index": 2},
+	{"name": "confused", "index": 3}
+  ]
+}

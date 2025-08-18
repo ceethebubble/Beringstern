@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_hurt",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.8509524,
+  "name":"sfx_hurt",
+  "parent":{
+    "name":"health",
+    "path":"folders/Sounds/sfx/game/health.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_hurt.wav",
+  "type":0,
+  "volume":1.0,
+}

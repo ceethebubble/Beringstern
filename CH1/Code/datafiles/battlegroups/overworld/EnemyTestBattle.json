@@ -1,0 +1,13 @@
+{
+    "id": 0,
+    "background": "overworldg",
+    "music": "msc_enemyt_overworld",
+    "battle_object": "obj_battle_parent",
+    "opponent_name": "Test Battle",
+    "opponent_maxhp": 10,
+    "opponent_icon_sprite": "spr_dialog_enemy_0",
+    "playerx": 1024,
+    "playery": 650,
+    "battletime": 9,
+    "styleGoal": 20
+}

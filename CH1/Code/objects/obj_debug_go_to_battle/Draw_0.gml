@@ -1,0 +1,7 @@
+draw_set_font(fnt_serif)
+draw_set_halign(fa_left)
+draw_set_color(c_white)
+draw_self()
+draw_text_transformed(x - 120,y - 20,"Go To Battle",image_yscale / 70,image_yscale / 70,image_angle / 5 )
+scr_battlegroups()
+draw_text_transformed(x - 120,y + 60,opponent_name,image_yscale / 80,image_yscale / 80,image_angle / 2 )

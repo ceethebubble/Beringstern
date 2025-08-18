@@ -1,0 +1,1 @@
+obj_proffesor_paper.questionPressed = true;

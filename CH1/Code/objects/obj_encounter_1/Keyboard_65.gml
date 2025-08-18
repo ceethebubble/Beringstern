@@ -1,0 +1,1 @@
+if !global.cutscene steps += 0.25

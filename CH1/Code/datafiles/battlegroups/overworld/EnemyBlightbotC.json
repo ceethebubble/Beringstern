@@ -1,0 +1,14 @@
+{
+    "id": 3,
+    "background": "overworldg",
+    "music": "msc_enemyt_overworld",
+    "battle_object": "obj_battle_enemy_3",
+    "opponent_name": "Blightbot C",
+    "opponent_maxhp": 120,
+    "opponent_icon_sprite": "spr_dialog_enemy_3",
+    "playerx": 1024,
+    "playery": 650,
+    "battletime": 40,
+    "styleGoal": 5,
+    "ai": "enemy_blightbot_c"
+}

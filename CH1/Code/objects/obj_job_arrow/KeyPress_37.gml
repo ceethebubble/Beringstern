@@ -1,0 +1,1 @@
+if job_selected > 0 {job_selected -= 1;}

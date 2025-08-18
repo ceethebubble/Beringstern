@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_bass_drop",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":3.3120182,
+  "name":"sfx_bass_drop",
+  "parent":{
+    "name":"other",
+    "path":"folders/Sounds/sfx/other.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_bass_drop.mp3",
+  "type":0,
+  "volume":1.0,
+}

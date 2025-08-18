@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"mayor_02",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":2.9285,
+  "name":"mayor_02",
+  "parent":{
+    "name":"mayor",
+    "path":"folders/Sounds/voice_lines/mayor.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mayor_02.wav",
+  "type":0,
+  "volume":1.0,
+}

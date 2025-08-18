@@ -1,0 +1,80 @@
+{
+    "xp_requirements":
+	{
+        "level_0": 0,
+        "level_1": 1,
+        "level_2": 200,
+        "level_3": 1000,
+        "level_4": 1500,
+        "level_5": 2000
+    },
+	
+    "level_1_data": {
+        "buildings_unlocked":
+		[
+			""
+		],
+        "healthMax": 500
+    },
+	
+    "level_2_data":
+	{
+        "buildings_unlocked":
+		[
+			""
+		],
+        "healthMax": 1000
+    },
+	
+    "level_3_data":
+	{
+        "buildings_unlocked":
+		[
+			""
+		],
+        "healthMax": 1200
+    },
+	
+    "level_4_data":
+	{
+        "buildings_unlocked":
+		[
+			""
+		],
+        "healthMax": 2000
+    },
+	
+    "level_5_data":
+	{
+        "buildings_unlocked":
+		[
+			""
+		],
+        "healthMax": 2500
+    },
+	
+	"elements":
+	{
+		"H": { "proton":1, "neutron":0,"electron":1,"name":"Hydrogen","info":"Made for the bubbly bubbles in Beringstern."},
+		"He": { "proton":2, "neutron":2,"electron":2,"name":"Helium","info":"You can use this to be a balloon!"},
+		"Li": { "proton":3, "neutron":3,"electron":3,"name":"Lithium","info":"Can be used for batteries."},
+		"Be": { "proton":4, "neutron":5,"electron":4,"name":"Beryllium","info":"It's can be used for that little Rocky shopkeeper guy!"},
+		"B": { "proton":5, "neutron":6,"electron":5,"name":"Boron","info":"I'm pretty sure you can help that doctor in the... Beringstern Hospital?"},
+		"C": { "proton":6, "neutron":7,"electron":6,"name":"Carbon","info":"um... don't use this one on anybody"},
+		"N": { "proton":7, "neutron":8,"electron":7,"name":"Nitrogen","info":"yeah... don't use this one either... unless you wanna make a weapon"},
+		"O": { "proton":8, "neutron":9,"electron":8,"name":"Oxygen","info":"Put this in a helmet to breathe in outer space. I wonder if there is a way to get there..."},
+		"Ne": { "proton":10, "neutron":11,"electron":10,"name":"Neon","info":"Hey, I heard a robot on Fruit Flower Dr. needs that for some help."},
+		"Na": { "proton":11, "neutron":12,"electron":11,"name":"Sodium","info":"You can use this for the Gadget Shop.","no_gadget_unlocked_info":"You can use this for the ???????"},
+		"Al": { "proton":13, "neutron":14,"electron":13,"name":"Aluminum","info":"Can be used to make a choky weapon."},
+		"Cl": { "proton":17, "neutron":17, "electron":17, "name":"Chlorine", "info":"A salty substance, so you shouldn't use too much in the pool."},
+		"Ag": { "proton":47, "neutron":119, "electron":47, "name":"Silver", "info":"Can make a shield!" },
+		"Au": { "proton":79, "neutron":118, "electron":79, "name":"Gold", "info":"Shiny but fragile."}
+	},
+	
+	"elementsMIX":
+	{
+		"Water-Shooter":{"mix1":"H","mix2":"H","mix3":"O","itemMixed":true,"itemToMix":"section:gun","id":"watershoot","needsToBeMaterialized":false},
+		"Neon Battery":{"mix1":"Ne","mix2":"Ne","mix3":"L","itemMixed":false,"itemToMix":"","id":"neonbattery","needsToBeMaterialized":true},
+		"Salty Spray":{"mix1":"Na","mix2":"Cl", "itemMixed":true, "itemToMix":"bottle", "id":"saltyspray", "needsToBeMaterialized":false}
+	}
+}

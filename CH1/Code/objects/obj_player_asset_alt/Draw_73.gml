@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_gui_circle,0,sel_x,sel_y,0.5,0.5,0,c_white,1)

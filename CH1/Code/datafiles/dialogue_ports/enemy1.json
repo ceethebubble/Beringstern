@@ -1,0 +1,10 @@
+{
+  "sprite": "spr_dialog_enemy_1",
+  "char_name": "Blightbot A",
+  "scale": 0.9,
+  "xOffset": 10,
+  "yOffset": 10,
+  "expressions": [
+    {"name": "default","index": 0}
+  ]
+}

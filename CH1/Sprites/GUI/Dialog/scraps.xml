@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="scraps.png">
+	<!-- Created with Adobe Animate version 24.0.1.329 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="angry0000" x="35" y="35" width="80" height="88"/>
+	<SubTexture name="cry0000" x="35" y="158" width="80" height="88"/>
+	<SubTexture name="happy0000" x="150" y="35" width="80" height="88"/>
+	<SubTexture name="normal0000" x="35" y="281" width="80" height="88"/>
+	<SubTexture name="sad0000" x="150" y="158" width="80" height="88"/>
+</TextureAtlas>

@@ -1,0 +1,12 @@
+Hello! Welcome to Beringstern. Mod anything you want, just make sure to credit me. Thanks!
+
+Here are the names you can credit:
+teamcgr
+JJ
+ceebubbl
+
+Add your name to the moderatorslist in obj_debug_step_0
+Press F1 in the main menu and type in your moderator username
+Press the ? button and copy paste that link for help
+
+Go to the "datafiles" tab in raw file explorer and edit the config and achievment list and stuff

@@ -1,0 +1,1 @@
+alarm[6]= room_speed * 2

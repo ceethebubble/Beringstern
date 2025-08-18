@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdr_daynight",
+  "name":"shdr_daynight",
+  "parent":{
+    "name":"dynamic",
+    "path":"folders/Shaders/dynamic.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

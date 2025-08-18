@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"old_shader",
+  "name":"old_shader",
+  "parent":{
+    "name":"Notes",
+    "path":"folders/Notes.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

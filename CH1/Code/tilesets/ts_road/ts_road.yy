@@ -1,0 +1,43 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"ts_road",
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"roadSet","closed_edge":false,"name":"roadSet","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        11,17,15,32,5,11,10,7,7,11,11,11,11,11,11,11,26,26,26,10,3,3,3,6,28,28,28,12,32,32,32,16,25,22,21,21,
+        23,23,33,33,31,31,20,2,30,4,1,
+      ],},
+  ],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"ts_road",
+  "out_columns":6,
+  "out_tilehborder":0,
+  "out_tilevborder":0,
+  "parent":{
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_tile_road",
+    "path":"sprites/spr_tile_road/spr_tile_road.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":150,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":150,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":35,
+}

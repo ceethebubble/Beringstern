@@ -1,0 +1,5 @@
+draw_set_alpha(image_alpha)
+draw_self()
+draw_set_color(c_black)
+draw_text_transformed(896,288,string(global.flags[1]) + "/5",0.6,0.6,0)
+draw_set_alpha(1)

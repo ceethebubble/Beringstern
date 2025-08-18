@@ -1,0 +1,1 @@
+if global.debug room_speed = 120

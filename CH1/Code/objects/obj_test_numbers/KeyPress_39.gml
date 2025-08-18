@@ -1,0 +1,1 @@
+number = real(get_string("Type in a number please!",""))

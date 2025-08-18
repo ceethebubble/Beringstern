@@ -1,0 +1,1 @@
+if encounterDialog < 9999 encounterDialog += 1

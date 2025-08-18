@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdr_player_grayscale",
+  "name":"shdr_player_grayscale",
+  "parent":{
+    "name":"player",
+    "path":"folders/Shaders/player.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

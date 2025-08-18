@@ -1,0 +1,1 @@
+audio_play_sound(msc_game_over,0,true)

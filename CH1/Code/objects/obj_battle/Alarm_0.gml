@@ -1,0 +1,1 @@
+if surface_exists(global.room_screenshot) room_goto(cts_win_screen);

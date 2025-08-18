@@ -1,0 +1,1 @@
+show_message("Frame: "+string(frame)+", Size: "+string(scale))

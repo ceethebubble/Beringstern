@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_enemy_3_kill",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.5207483,
+  "name":"sfx_enemy_3_kill",
+  "parent":{
+    "name":"defeat sounds",
+    "path":"folders/Sounds/sfx/game/battle/defeat sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_enemy_3_kill.ogg",
+  "type":0,
+  "volume":1.0,
+}

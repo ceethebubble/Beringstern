@@ -1,0 +1,6 @@
+draw_set_halign(fa_left)
+draw_set_font(fnt_serif)
+draw_set_valign(fa_top)
+draw_set_color(c_white)
+draw_self()
+draw_text_transformed(x-20,y -50,"?",image_yscale / 70,image_yscale / 70,image_angle / 5 )
