@@ -112,4 +112,4 @@ if (!file_exists("main.ini"))
 }
 
 surface_resize(application_surface, 1366, 768);
-if !instance_exists(obj_borders) instance_create_depth(0,0,0,obj_borders)
+if !instance_exists(obj_gameControl) instance_create_depth(0,0,0,obj_gameControl)

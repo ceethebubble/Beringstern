@@ -8,8 +8,6 @@
   "instanceCreationOrder":[
     {"name":"inst_56F59424","path":"rooms/rm_wildlife/rm_wildlife.yy",},
     {"name":"inst_7DDFCE89","path":"rooms/rm_wildlife/rm_wildlife.yy",},
-    {"name":"inst_7B7F57E4","path":"rooms/rm_wildlife/rm_wildlife.yy",},
-    {"name":"inst_20E6CE95","path":"rooms/rm_wildlife/rm_wildlife.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -37,8 +35,6 @@
     {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_56F59424","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_56F59424","objectId":{"name":"obj_save_and_music","path":"objects/obj_save_and_music/obj_save_and_music.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":480.0,},
         {"$GMRInstance":"v2","%Name":"inst_7DDFCE89","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7DDFCE89","objectId":{"name":"obj_wildlife_protector","path":"objects/obj_wildlife_protector/obj_wildlife_protector.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":640.0,},
-        {"$GMRInstance":"v2","%Name":"inst_7B7F57E4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7B7F57E4","objectId":{"name":"obj_wildlife_protector","path":"objects/obj_wildlife_protector/obj_wildlife_protector.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":480.0,"y":672.0,},
-        {"$GMRInstance":"v2","%Name":"inst_20E6CE95","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_20E6CE95","objectId":{"name":"obj_wildlife_protector","path":"objects/obj_wildlife_protector/obj_wildlife_protector.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":704.0,},
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4294941952,"depth":200,"effectEnabled":true,"effectType":"_filter_clouds","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[
         {"name":"g_CloudScale","type":0,"value":"64",},

@@ -1,4 +1,5 @@
 draw_set_alpha(1)
+draw_set_font(fnt_default)
 draw_set_color(c_white)
 makeBox(100,100,room_width-100,600,c_white,2)
 

@@ -12,4 +12,5 @@ if showText = true
 	draw_text_transformed(416,384,questions[2],0.4,0.4,2)
 	draw_text_transformed(416,448,questions[3],0.4,0.4,2)
 	draw_text_transformed(416,512,questions[4],0.4,0.4,2)
+	draw_text_transformed(416,620,"(Press ENTER to exit)",0.4,0.4,2)
 }
