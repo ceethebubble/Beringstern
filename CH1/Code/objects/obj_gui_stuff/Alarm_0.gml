@@ -1,5 +1,3 @@
-inventoryInfoBox = 
-[
-	"Heals 2 HP.",
-	"Heals 3 HP."
-]
+statsOpened = false;
+global.cutscene = false;
+inventoryOpened = false;

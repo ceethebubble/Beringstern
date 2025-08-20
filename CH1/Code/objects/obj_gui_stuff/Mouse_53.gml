@@ -1,11 +1,4 @@
-if statsOpened
+if inventoryOpened or statsOpened
 {
-	statsOpened = false;
-	global.cutscene = false;
-}
-
-if inventoryOpened
-{
-	inventoryOpened = false;
-	global.cutscene = false;
+	alarm[0] = 2
 }
