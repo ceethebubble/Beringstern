@@ -30,6 +30,7 @@
     {"name":"Sprites","order":12,"path":"folders/Sprites.yy",},
     {"name":"2","order":1,"path":"folders/Sprites/game/character/enemies/2.yy",},
     {"name":"3","order":2,"path":"folders/Sprites/game/character/enemies/3.yy",},
+    {"name":"4","order":3,"path":"folders/Sprites/game/character/enemies/4.yy",},
     {"name":"Tests","order":13,"path":"folders/Tests.yy",},
     {"name":"Tile Sets","order":14,"path":"folders/Tile Sets.yy",},
   ],
