@@ -12,6 +12,8 @@ if global.flags[2]
 	settings_sections(section,1,"Windowed")
 else
 	settings_sections(section,1,"Fullscreen")
+	
+settings_sections(section,2,"Play Music")
 
 //RESET PROGRESS!
 

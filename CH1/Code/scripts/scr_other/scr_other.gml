@@ -21,6 +21,81 @@ function load_list_from_txt(_filename) {
     return _list;
 }
 
+function get_wav_files_in_music()
+{
+    var index_path = "music/index.txt"; // adjust if in a diff folder
+	var index_list = -1
+	if file_exists(index_path)
+	{
+		// Split by lines
+		var file_id = file_text_open_read(index_path);
+		var index_text = "";
+		while (!file_text_eof(file_id))
+		{
+			index_text += file_text_read_string(file_id) + "|";
+			file_text_readln(file_id); // move to next line
+		}
+		file_text_close(file_id);
+		
+		// Split by lines
+		index_list = string_split(index_text, "|");
+	}
+	return index_list;
+}
+
+function music_setup()
+{
+	if (array_length(songs) > 0)
+	{
+		var song_name = songs[current_index];   // "Beringstern.wav"
+		tempo = real(tempofiles[current_index]);    // 110
+		beat_timer = steps_per_beat
+		var cover_name = song_name + ".png"; // "Beringstern.png"
+		var cover_path = "music/covers/" + cover_name;
+		
+		// Load cover sprite (maybe in Step or when index changes)
+		if (file_exists(cover_path)) {
+		    if (sprite_exists(cover_sprite)) {
+		        sprite_delete(cover_sprite);
+		    }
+		    cover_sprite = sprite_add(cover_path, 1, false, false, 700, 700);
+		} else {
+		    cover_sprite = -1; // No cover found
+		}
+		show_debug_message(song_name)
+		show_debug_message(current_index)
+		
+		current_music = get_song_from_file(song_name)
+		audio_play_sound(current_music,0,true)
+	}
+}
+
+function get_tempo_files()
+{
+    var index_path = "music/tempos.txt"; // adjust if in a diff folder
+	var index_list = -1
+	if file_exists(index_path)
+	{
+		// Split by lines
+		var file_id = file_text_open_read(index_path);
+		var index_text = "";
+		while (!file_text_eof(file_id))
+		{
+			index_text += file_text_read_string(file_id) + "|";
+			file_text_readln(file_id); // move to next line
+		}
+		file_text_close(file_id);
+		
+		// Split by lines
+		index_list = string_split(index_text, "|");
+	}
+	return index_list;
+}
+
+function get_song_from_file(song_name)
+{
+	return audio_create_stream("music/songs/" + song_name + ".ogg")
+}
 
 function json_pretty(_json) {
     var _indent = 0;

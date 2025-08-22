@@ -7,6 +7,9 @@ switch section
 	case 1:
 		window_set_fullscreen(!window_get_fullscreen());
 		break;
+	case 2:
+		fade_to_room(rm_music)
+		break;
 	case SECTIONMAX:
 		if file_exists("progressFileDefault.bstrn")
 		{
