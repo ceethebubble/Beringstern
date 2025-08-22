@@ -4,16 +4,14 @@ draw_set_alpha(1)
 
 //BUTTONS
 
-settings_sections(section,0,"Back")
-
 global.flags[2] = window_get_fullscreen()
 
 if global.flags[2]
-	settings_sections(section,1,"Windowed")
+	settings_sections(section,0,"Windowed")
 else
-	settings_sections(section,1,"Fullscreen")
+	settings_sections(section,0,"Fullscreen")
 	
-settings_sections(section,2,"Play Music")
+settings_sections(section,1,"Play Music")
 
 //RESET PROGRESS!
 

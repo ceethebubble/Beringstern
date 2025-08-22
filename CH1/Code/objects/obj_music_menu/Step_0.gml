@@ -1,36 +1,10 @@
-var max_index = array_length(songs) - 2;
+max_index = array_length(songs) - 2;
 
-if (keyboard_check_pressed(vk_left)) {
-    if (current_index > 0) {
-        current_index -= 1;
-    }
-	else
-	{
-		current_index = max_index
-	}
-	play_sfx(sfx_dong)
-	xCoverOffset = 1
-	side = -1
-	speedX = 200
-	scaleCover = 0.4
-	audio_stop_all()
-}
+if (keyboard_check_pressed(vk_left))
+	alarm[1] = 1
 
-if (keyboard_check_pressed(vk_right)) {
-    if (current_index < max_index) {
-        current_index += 1;
-    }
-	else
-	{
-		current_index = 0
-	}
-	play_sfx(sfx_dong)
-	xCoverOffset = -1
-	side = 1
-	speedX = 200
-	scaleCover = 0.4
-	audio_stop_all()
-}
+if (keyboard_check_pressed(vk_right))
+    alarm[0] = 1
 
 steps_per_beat = room_speed * 60 / tempo;
 djScale += (0.5 - djScale) * 1 / (steps_per_beat / 2)

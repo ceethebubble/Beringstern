@@ -6,6 +6,7 @@ cover_sprite = -1
 
 speedX = 0
 side = 0
+max_index = array_length(songs) - 2;
 xCover = (room_width/2)
 yCover = (room_height/2)
 xCoverOffset = 0
