@@ -4,7 +4,7 @@ image_xscale = 0.7
 image_yscale = 0.7
 attack_offset = 30
 intro_sprite = spr_enemy_4_intro
-intro_length = 3
+intro_length = (27/10) // in seconds
 idle_sprite = spr_enemy_4_idle
 attack_sprite = spr_enemy_4_idle
 spare_sprite = spr_enemy_4_spare
@@ -14,6 +14,7 @@ kill_sound = sfx_enemy_3_kill
 
 if get_json_file(string(global.aiPath),"intro")
 {
+	global.musPlay = true
 	sprite_index = intro_sprite
 	alarm[3] = intro_length * room_speed
 }

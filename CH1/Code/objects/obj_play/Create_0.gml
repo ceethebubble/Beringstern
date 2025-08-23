@@ -38,6 +38,7 @@ global.inventory_slot = 1;
 global.inventory = ds_list_create();
 global.voicelines = "on"
 global.stylishPoints = 0
+global.musPlay = false
 scr_flags()
 
 textToShow = ""

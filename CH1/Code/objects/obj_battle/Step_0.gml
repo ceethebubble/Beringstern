@@ -24,8 +24,11 @@ if !global.cutscene
 }
 else
 {
-	volume -= 0.2
-	guidown += (250 - guidown) / 20
+	if !global.musPlay
+	{
+		volume -= 0.2
+		guidown += (250 - guidown) / 20
+	}
 }
 
 if volume > 1

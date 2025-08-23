@@ -290,15 +290,15 @@ function scr_battle_steps()
 		// Apply boundaries
 		camx = clamp(enemy_x, minX, maxX);
 		camy = clamp(enemy_y, minY, maxY);
-		
-		// Set the camera position
-		camera_set_view_pos(view_camera[0], camx - (camWidth * 0.5) / camera_zoom, camy - (camHeight * 0.5) / camera_zoom);
-
-		// Apply zoom to the camera
-		camera_set_view_size(view_camera[0], camWidth / camera_zoom, camHeight / camera_zoom);
 	}
 	else
 	{
 		camera_zoom += ((1 - camera_zoom) / 4);
 	}
+	
+	// Set the camera position
+	camera_set_view_pos(view_camera[0], camx - (camWidth * 0.5) / camera_zoom, camy - (camHeight * 0.5) / camera_zoom);
+	
+	// Apply zoom to the camera
+	camera_set_view_size(view_camera[0], camWidth / camera_zoom, camHeight / camera_zoom);
 }
