@@ -2,3 +2,4 @@ overworld/EnemyTestBattle.json
 overworld/EnemyBlightbotA.json
 overworld/EnemyBlightbotB.json
 overworld/EnemyBlightbotC.json
+overworld/EnemyBlightbotD.json

@@ -3,12 +3,24 @@ y = 256
 image_xscale = 0.35
 image_yscale = 0.35
 attack_offset = 30
+intro_sprite = -1
+intro_length = 0
 idle_sprite = spr_enemy_3_idle
 attack_sprite = spr_enemy_3_attack
 spare_sprite = spr_enemy_3_spare
 spare_sound = sfx_enemy_3_spare
 kill_sprite = spr_enemy_3_kill
 kill_sound = sfx_enemy_3_kill
+
+if get_json_file(string(global.aiPath),"intro")
+{
+	sprite_index = intro_sprite
+	alarm[3] = intro_length * room_speed
+}
+else
+{
+	sprite_index = idle_sprite
+}
 
 //DON'T CHANGE!
 
@@ -20,6 +32,7 @@ dying = false
 time_ = 0
 enemy_x = x
 enemy_y = y
+introDone = false
 
 // Patrol settings
 scr_setup_ai()
@@ -29,6 +42,7 @@ start_x = x;
 start_y = y;
 patrol_distance = 256; // How far left/right to move
 move_in_progress = false;
+chosen = -1
 
 //CUTSCENE
 

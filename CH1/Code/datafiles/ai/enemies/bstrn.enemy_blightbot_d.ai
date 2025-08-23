@@ -3,12 +3,8 @@
  "hover": true,
  "hover_amount": 40,
  "move_speed": 4,
- "intro": false,
+ "intro": true,
  "attacks":
  [
-  {
-   "id": "obj_hazard_laser_ball",
-   "chance": 100
-  }
  ]
 }
