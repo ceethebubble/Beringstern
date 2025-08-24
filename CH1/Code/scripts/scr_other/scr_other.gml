@@ -45,15 +45,17 @@ function get_wav_files_in_music()
 
 function music_setup()
 {
+	video_enable_loop(true)
 	if (array_length(songs) > 0)
 	{
+		indexrised = false
 		var song_name = songs[current_index];   // "Beringstern.wav"
 		tempo = real(tempofiles[current_index]);    // 110
 		beat_timer = steps_per_beat
 		var cover_name = song_name + ".png"; // "Beringstern.png"
 		var cover_path = "music/covers/" + cover_name;
 		
-		// Load cover sprite (maybe in Step or when index changes)
+		// Load cover sprite
 		if (file_exists(cover_path)) {
 		    if (sprite_exists(cover_sprite)) {
 		        sprite_delete(cover_sprite);
@@ -62,11 +64,24 @@ function music_setup()
 		} else {
 		    cover_sprite = -1; // No cover found
 		}
+		
+		video_path = "music/covers/" + song_name + ".mp4";
+		
+		// Load video
+		videoData = -1
+		vidExists = false
+		vidOpen = -1
+		video_close()
+		if (file_exists(video_path))
+		{
+			alarm[2] = 1
+		}
+		
 		show_debug_message(song_name)
 		show_debug_message(current_index)
 		
 		current_music = get_song_from_file(song_name)
-		audio_play_sound(current_music,0,true)
+		audio_play_sound(current_music,0,false)
 	}
 }
 

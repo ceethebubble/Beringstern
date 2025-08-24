@@ -1,3 +1,4 @@
+	indexrised = true
 	if (current_index > 0) {
         current_index -= 1;
     }

@@ -3,6 +3,11 @@ songs = get_wav_files_in_music()
 tempofiles = get_tempo_files()
 current_index = 0
 cover_sprite = -1
+videoData = -1
+vidExists = false
+vidOpen = -1
+video_close()
+indexrised = false
 
 speedX = 0
 side = 0

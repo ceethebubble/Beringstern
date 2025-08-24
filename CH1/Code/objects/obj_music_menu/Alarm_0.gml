@@ -1,3 +1,4 @@
+	indexrised = true
 	if (current_index < max_index) {
         current_index += 1;
     }
