@@ -37,17 +37,9 @@ stretchy = 0.4 + 0.4 * eased_t; // Adjust stretch in the y-direction
 // Set drawing alpha (transparency)
 draw_set_alpha(alpha);
 
-// Calculate screen center position
-var screen_width = display_get_width();
-var screen_height = display_get_height();
-
-// Get sprite dimensions
-var sprite_w = sprite_get_width(spr_title);
-var sprite_h = sprite_get_height(spr_title);
-
 // Calculate the position to center the sprite
-var x_pos = screen_width / 2.8 - (sprite_w * stretch) / 2;
-var y_pos = screen_height / 3 - (sprite_h * stretchy) / 2;
+var x_pos = room_width / 2
+var y_pos = 400
 
 // Apply the rise effect after 2 seconds
 if (delay_over) {
