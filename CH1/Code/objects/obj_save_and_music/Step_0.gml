@@ -70,13 +70,9 @@ else
 global.room = room
 
 if not global.debug
-{
 	global.gameTime = current_hour + (current_minute / 60)
-	if global.gameTime < 1 && global.gameTime > 0
-	{
-		global.gameTime += 24
-	}
-}
+if global.gameTime < 1 && global.gameTime > 0
+	global.gameTime += 24
 
 global.maxhp = 60 + global.toughness * 20
 
