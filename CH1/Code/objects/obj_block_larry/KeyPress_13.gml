@@ -62,7 +62,7 @@ if global.job == "construction"
 		global.cutscene = false;
 		hover = false;
 		dialogTime += 1;
-		fade_to_room(rm_construction)
+		fade_to_room(rm_construction,true,1152,320)
 	}
 }
 else
@@ -225,6 +225,6 @@ if dialog == 2
 	dialog = 0;
 	global.cutscene = false;
 	hover = false;
-	fade_to_room(rms)
+	fade_to_room(rms,true,576,640)
 }
 }

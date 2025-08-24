@@ -2,7 +2,7 @@ if !global.cutscene{
 	if hover
 	{
 	   // Blend the sprite color towards white
-	   image_blend = make_color_rgb(255, 128, 255);
+	   image_blend = make_color_rgb(255, 240, 255);
 	}
 	else
 	{
