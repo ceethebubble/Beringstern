@@ -12,6 +12,8 @@ spare_sound = sfx_enemy_3_spare
 kill_sprite = spr_enemy_4_kill
 kill_sound = sfx_enemy_3_kill
 
+scr_enemy_create()
+
 if get_json_file(string(global.aiPath),"intro")
 {
 	global.musPlay = true

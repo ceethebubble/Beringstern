@@ -42,6 +42,7 @@ volume = 1
 fading = 0
 
 application_surface_draw_enable(false)
+if instance_exists(obj_player) with obj_player sprite_index = up
 
 // a bunch of player avatar
 

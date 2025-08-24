@@ -4,6 +4,9 @@
  "hover_amount": 40,
  "move_speed": 4,
  "intro": true,
+ "intro_type": "laser-ball-basic",
+ "intro-X": 70,
+ "intro-Y": 30,
  "attacks":
  [
  ]

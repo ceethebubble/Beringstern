@@ -263,7 +263,8 @@ function scr_battle_steps()
 	
 	if sparing or dying or global.cutscene
 	{
-		if (object_exists(obj_parent_hazard)) {
+		if (object_exists(obj_parent_hazard)) && !global.cutscene
+		{
 	        with (obj_parent_hazard) {
 	           instance_destroy();
 			}
@@ -301,4 +302,19 @@ function scr_battle_steps()
 	
 	// Apply zoom to the camera
 	camera_set_view_size(view_camera[0], camWidth / camera_zoom, camHeight / camera_zoom);
+}
+
+function scr_enemy_create()
+{
+	if get_json_file(string(global.aiPath), "intro_type") != -1
+	{
+		switch (get_json_file(string(global.aiPath),"intro_type"))
+		{
+			case "laser-ball-basic":
+				var introX = get_json_file(string(global.aiPath),"intro-X")
+				var introY = get_json_file(string(global.aiPath),"intro-Y")
+				instance_create_depth(x+introX,y+introY,depth,obj_hazard_laser_ball_D)
+				break;
+		}
+	}
 }
