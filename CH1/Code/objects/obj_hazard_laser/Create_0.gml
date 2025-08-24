@@ -29,13 +29,10 @@ alarm[1] = room_speed * 0.4
 alarm[0] = room_speed * 0.8
 audio_play_sound(sfx_laser,0,false)
 
-if !instance_exists(obj_battle_enemy_2)
-{
-	if instance_exists(obj_hazard_laser_ball)
-		alarm[3] = 10 * room_speed
-	else
-		alarm[3] = 2 * room_speed
-}
+if instance_exists(obj_hazard_laser_ball)
+	alarm[3] = 10 * room_speed
+else
+	alarm[3] = 2.5 * room_speed
 
 // do NOT change!
 timer = 0
