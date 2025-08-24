@@ -6,3 +6,19 @@ if (cover_sprite != -1) {
 }
 
 draw_sprite_ext(spr_dj_brassel,0,192,576,djScale,djScale,0,c_white,1)
+
+if vidExists
+{
+	videoData = video_draw()
+	if videoData != -1
+	{
+		if videoData[0] == 0
+		{
+			draw_surface_ext(videoData[1],50,50,0.2,0.2,1,c_white,1)
+		}
+	}
+}
+else
+{
+	video_close()
+}

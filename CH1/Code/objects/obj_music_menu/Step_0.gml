@@ -55,6 +55,7 @@ else
 		{
 			xCoverOffset = 0 - (room_width / 2) - 125
 			music_setup()
+			indexrised = false
 		}
 	}
 	if xCoverOffset < 0
@@ -68,5 +69,14 @@ else
 			speedX = 0
 			xCoverOffset = 0
 		}
+	}
+}
+
+if !audio_is_playing(current_music)
+{
+	if !indexrised
+	{
+		alarm[0] = 1
+		indexrised = true
 	}
 }
