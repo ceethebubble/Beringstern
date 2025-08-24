@@ -66,7 +66,7 @@ if dialog = 14
 	}
 	if global.job = "proffesor"
 	{
-		start_dialogue("player","I'm just a proffesor!\nMy students can be older than me.","surprised")
+		start_dialogue("player","I'm just a professor!\nMy students can be older than me.","surprised")
 	}
 }
 if dialog = 15
