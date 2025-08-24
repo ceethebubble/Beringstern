@@ -21,3 +21,13 @@ if draining > 0
 	global.stylishPoints -= 0.25
 	draining -= 1 / room_speed
 }
+
+if instance_exists(obj_battle.battle_object)
+{
+	var shouldDestroy = false
+	with (obj_battle.battle_object)
+	{
+		if sparing or dying shouldDestroy = true
+	}
+	if shouldDestroy instance_destroy()
+}

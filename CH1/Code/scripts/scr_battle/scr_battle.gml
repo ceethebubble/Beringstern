@@ -204,7 +204,7 @@ function scr_battle_steps()
 	
 	if introDone
 	{
-		if place_meeting(x,y,obj_hazard_laser) green += 0.01
+		if get_json_file(_file,"spare-method") == "object-greenify" if place_meeting(x,y,asset_get_index(get_json_file(_file,"spare-object"))) green += real(get_json_file(_file,"spare-power"))
 		if global.opponent_maxhp != global.opponent_hp green = 0
 		
 		time_ += 1 / room_speed
@@ -266,7 +266,7 @@ function scr_battle_steps()
 		if (object_exists(obj_parent_hazard)) && !global.cutscene
 		{
 	        with (obj_parent_hazard) {
-	           instance_destroy();
+				instance_destroy();
 			}
 		}
 		

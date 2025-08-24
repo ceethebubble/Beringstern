@@ -3,6 +3,9 @@
  "hover": true,
  "hover_amount": 40,
  "move_speed": 4,
+ "spare-object": "obj_hazard_laser",
+ "spare-power": 0.01,
+ "spare-method": "object-greenify",
  "intro": false,
  "attacks":
  [

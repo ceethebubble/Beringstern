@@ -17,7 +17,7 @@ if !introdone
 		speedy += .5
 	}
 }
-else if introdone
+else
 {
 	// Inherit the parent event
 	event_inherited();
@@ -28,6 +28,10 @@ else if introdone
 		setposition = true
 	}
 	depth = -y
+	move_towards_point(global.playerx,global.playery,mspeed)
+	mspeed += 0.1
+	if mspeed > 8
+		mspeed = 8
 }
 
 image_xscale += (0.4 - image_xscale) / 5

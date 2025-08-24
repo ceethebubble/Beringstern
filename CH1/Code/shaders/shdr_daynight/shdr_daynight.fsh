@@ -17,9 +17,9 @@ void main()
 	// Wrap u_time into 0–25 range for smooth fading
 	float time = u_time;
 	
-	if (u_time >= 1.0 && u_time < 6.0) {
+	if (u_time >= 0.0 && u_time < 6.0) {
 		// Night 0–6 (continuation of evening fade)
-		float t = (u_time - 1.) / 5.; // 0 maps to 0.4, 6 maps to 1.0
+		float t = (u_time) / 6.; // 0 maps to 0.4, 6 maps to 1.0
 		pix.r = tex.r * mix(0.3, 1.0, t);
 		pix.g = tex.g * mix(0.3, 0.6, t);
 		pix.b = tex.b * mix(0.5, 1.2, t);

@@ -16,4 +16,5 @@ image_alpha = 1
 
 speedy = -9999
 setposition = false
+mspeed = 0
 alarm[0] = 0.4 * room_speed
