@@ -8,7 +8,7 @@ intro_length = (27/10) // in seconds
 idle_sprite = spr_enemy_4_idle
 attack_sprite = spr_enemy_4_idle
 spare_sprite = spr_enemy_4_spare
-spare_sound = sfx_enemy_3_spare
+spare_sound = sfx_enemy_1_spare
 kill_sprite = spr_enemy_4_kill
 kill_sound = sfx_enemy_3_kill
 

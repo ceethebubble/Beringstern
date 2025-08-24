@@ -1,4 +1,4 @@
-if room == rm_battle && !punch && (!keyboard_check(ord("W")) && !keyboard_check(ord("S")) && !keyboard_check(ord("A")) && !keyboard_check(ord("D"))) && !global.cutscene
+if room == rm_battle && !punch && !global.cutscene
 {
 	audio_sound_pitch( sfx_punch, random_range(0.5, 2) )
 	play_sfx(sfx_punch)

@@ -1,11 +1,13 @@
+event_inherited()
+
 // change!
 damage = 5 // how much damage
 cooldown = 0.25 // in seconds, the cooldown
 drain = 0.5 // how long to drain style points
 styleRadius = 180 // how big the style points radius is
+shouldNeverDestroy = true // delete this variable entirely if you don't want it to destroy
 
 // do NOT change!
-
 changing = false
 timer = 0
 draining = 0
