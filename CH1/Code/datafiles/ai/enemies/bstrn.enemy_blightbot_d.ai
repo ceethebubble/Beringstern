@@ -4,7 +4,7 @@
  "hover_amount": 40,
  "move_speed": 4,
  "spare-object": "obj_hazard_laser_ball_D",
- "spare-power": 0.1,
+ "spare-power": 0.4,
  "spare-method": "object-greenify",
  "intro": true,
  "intro_type": "laser-ball-basic",
