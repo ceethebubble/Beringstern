@@ -17,9 +17,9 @@ void main()
 	// Wrap u_time into 0–25 range for smooth fading
 	float time = u_time;
 	
-	if (u_time >= 0.0 && u_time < 6.0) {
+	if (u_time >= 1.0 && u_time < 6.0) {
 		// Night 0–6 (continuation of evening fade)
-		float t = (u_time) / 6.; // 0 maps to 0.4, 6 maps to 1.0
+		float t = (u_time - 1.) / 5.; // 0 maps to 0.4, 6 maps to 1.0
 		pix.r = tex.r * mix(0.3, 1.0, t);
 		pix.g = tex.g * mix(0.3, 0.6, t);
 		pix.b = tex.b * mix(0.5, 1.2, t);
@@ -37,12 +37,17 @@ void main()
 		pix.g = tex.g * 1.0;
 		pix.b = tex.b * 1.0;
 	}
-	else if (time >= 20.0 && time < 25.0) {
+	else if (time >= 20.0 && time < 24.0) {
 		// Evening → Night 20–25 (smooth through midnight)
-		float t = (time - 20.0) / 5.0; // 20 → 0.0, 25 → 1.0
+		float t = (time - 20.0) / 4.0; // 20 → 0.0, 25 → 1.0
 		pix.r = tex.r * mix(1.0, 0.3, t);
 		pix.g = tex.g * mix(1.0, 0.3, t);
 		pix.b = tex.b * mix(1.0, 0.5, t);
+	}
+	else if (time >= 24.0) {
+		pix.r = tex.r * 0.3;
+		pix.g = tex.g * 0.3;
+		pix.b = tex.b * 0.5;
 	}
 
     // Output the modified pixel color
