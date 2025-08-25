@@ -5,6 +5,12 @@ if (cover_sprite != -1) {
     draw_text(200, 200, "No Cover");
 }
 
+draw_set_color(c_black)
+draw_set_font(fnt_fancy)
+draw_set_halign(fa_center)
+draw_set_valign(fa_middle)
+draw_text_transformed(xCover+xCoverOffset,yCover+320,"By "+artist,scaleCoverFinal,scaleCoverFinal,rotationCover)
+
 draw_sprite_ext(spr_dj_brassel,0,192,576,djScale,djScale,0,c_white,1)
 
 if vidExists
@@ -22,9 +28,3 @@ else
 {
 	video_close()
 }
-
-draw_set_color(c_black)
-draw_set_font(fnt_fancy)
-draw_set_halign(fa_center)
-draw_set_valign(fa_middle)
-draw_text_transformed(xCover+xCoverOffset,yCover+320,"By "+artist,scaleCoverFinal,scaleCoverFinal,rotationCover)
