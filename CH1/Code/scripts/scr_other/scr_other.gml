@@ -5,7 +5,7 @@ function get_ogg_tag(_path, _tag) {
     
     // read a chunk (headers + comments are early)
     var size = file_bin_size(f);
-    var max_read = min(size, 65536); // 64KB just to be safe
+    var max_read = min(size, 400); // 400 letters for no lag..
     var txt = "";
     for (var i = 0; i < max_read; i++) {
         txt += chr(file_bin_read_byte(f));
