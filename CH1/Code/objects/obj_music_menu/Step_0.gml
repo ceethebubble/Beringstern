@@ -72,7 +72,7 @@ else
 	}
 }
 
-if !audio_is_playing(current_music)
+if !audio_is_playing(current_music) && !fading
 {
 	if !indexrised
 	{

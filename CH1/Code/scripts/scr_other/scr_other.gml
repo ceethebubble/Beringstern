@@ -1,3 +1,45 @@
+function get_ogg_tag(_path, _tag) {
+    // open as binary
+    var f = file_bin_open(_path, 0); // 0 = read
+    if (f < 0) return "";
+    
+    // read a chunk (headers + comments are early)
+    var size = file_bin_size(f);
+    var max_read = min(size, 65536); // 64KB just to be safe
+    var txt = "";
+    for (var i = 0; i < max_read; i++) {
+        txt += chr(file_bin_read_byte(f));
+    }
+    file_bin_close(f);
+
+    // case-insensitive search for "<tag>="
+    var key = string_lower(_tag) + "=";
+    var txt_l = string_lower(txt);
+    var pos = string_pos(key, txt_l);
+    if (pos <= 0) return ""; // not found
+
+    // start right after "<tag>="
+    var start = pos + string_length(key);
+    var out = "";
+    var n = string_length(txt);
+
+    // collect until we hit a control byte (0..31) which usually separates comments
+    for (var i = start; i <= n; i++) {
+        var ch = string_char_at(txt, i);
+        var code = ord(ch);
+        if (code < 32) break; // null, LF, CR, etc → end of this field
+        out += ch;
+        if (string_length(out) > 512) break; // sanity cap
+    }
+
+    // trim quotes if present: artist="Cee the Bubble"
+    if (string_length(out) >= 2 && string_char_at(out, 1) == "\"" && string_char_at(out, string_length(out)) == "\"") {
+        out = string_copy(out, 2, string_length(out) - 2);
+    }
+
+    return string_trim(out);
+}
+
 function load_list_from_txt(_filename) {
     var _list = [];
     
@@ -82,6 +124,8 @@ function music_setup()
 		
 		current_music = get_song_from_file(song_name)
 		audio_play_sound(current_music,0,false)
+		artist = get_ogg_tag("music/songs/" + song_name + ".ogg", "artist")
+		show_debug_message(get_ogg_tag("music/songs/" + song_name + ".ogg", "artist"))
 	}
 }
 
