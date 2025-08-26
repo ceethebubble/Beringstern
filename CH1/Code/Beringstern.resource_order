@@ -109,6 +109,7 @@
     {"name":"obj_science","order":3,"path":"objects/obj_science/obj_science.yy",},
     {"name":"obj_settings_handler","order":6,"path":"objects/obj_settings_handler/obj_settings_handler.yy",},
     {"name":"obj_settings","order":5,"path":"objects/obj_settings/obj_settings.yy",},
+    {"name":"obj_shaker","order":5,"path":"objects/obj_shaker/obj_shaker.yy",},
     {"name":"obj_solid_direction","order":2,"path":"objects/obj_solid_direction/obj_solid_direction.yy",},
     {"name":"obj_solid","order":1,"path":"objects/obj_solid/obj_solid.yy",},
     {"name":"obj_stats_icons","order":7,"path":"objects/obj_stats_icons/obj_stats_icons.yy",},

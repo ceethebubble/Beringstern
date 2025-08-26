@@ -344,6 +344,7 @@
     {"id":{"name":"obj_science","path":"objects/obj_science/obj_science.yy",},},
     {"id":{"name":"obj_settings_handler","path":"objects/obj_settings_handler/obj_settings_handler.yy",},},
     {"id":{"name":"obj_settings","path":"objects/obj_settings/obj_settings.yy",},},
+    {"id":{"name":"obj_shaker","path":"objects/obj_shaker/obj_shaker.yy",},},
     {"id":{"name":"obj_solid_direction","path":"objects/obj_solid_direction/obj_solid_direction.yy",},},
     {"id":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},},
     {"id":{"name":"obj_stats_icons","path":"objects/obj_stats_icons/obj_stats_icons.yy",},},
