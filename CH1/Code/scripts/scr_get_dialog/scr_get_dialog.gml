@@ -1,123 +1,84 @@
-function getAllValuesFromLine(text, key, index) {
-    var lines = string_split(text, "\n");
-    var result = [];
-
-    for (var i = 0; i < array_length(lines); i++) {
-        var current_line = string_trim(lines[i]);
-
-        if (string_starts_with(current_line, key + ":")) {
-            var value = string_delete(current_line, 1, string_length(key + ":"));
-            value = string_trim(value);
-
-            // Strip quotes if it's wrapped in them
-            if (string_length(value) >= 2 && string_char_at(value, 1) == "\"" && string_char_at(value, string_length(value)) == "\"") {
-                value = string_copy(value, 2, string_length(value) - 2);
-            }
-
-            array_push(result, value);
-        }
-    }
-
-    // If index is provided, return just that match (1-based)
-    if (argument_count > 2) {
-        var idx = argument[2] - 1; // Convert to 0-based
-        if (idx >= 0 && idx < array_length(result)) {
-            return result[idx];
-        } else {
-            return ""; // Index out of range
-        }
-    }
-
-    return result; // Return all matches if no index given
-}
-
 function get_dialog(_dialogState)
 {
-	switch(_dialogState)
+    var _base = "dialogue/" + _dialogState + ".json";
+	var _night = "dialogue/" + _dialogState + "-n.json";
+
+	// Check time
+	if (global.gameTime >= 20 or global.gameTime < 7)
+	   // Check if night file exists
+	    if (file_exists(_night))
+	        _path = _night;
+	   else
+	       _path = _base; // fallback to normal
+	else
+	    _path = _base; // daytime
+	
+    var json_data = get_json_file(_path, "dialogue");
+
+    if ((dialog-1) < array_length(json_data))
 	{
-		case "hoot":
-			switch (dialog)
+        var entry = json_data[dialog - 1];
+		show_debug_message("Dialog: " + string(dialog - 1))
+        if (variable_struct_exists(entry, "speaker"))
+		{
+			var _type_speed = 0.35
+			if (variable_struct_exists(entry, "type_speed")) _type_speed = entry.type_speed
+            start_dialogue(
+                entry.speaker,
+                string_replace_all(entry.dialog, "{global.name}", global.name),
+                entry.expression,
+                _type_speed
+            );
+        }
+		else if (variable_struct_exists(entry, "choice"))
+		{
+			var choice = entry.choice;
+			
+			show_debug_message("Chosen: "+string(chosen))
+			show_debug_message("If Chosen: "+string(choice.if_chosen))
+			if (chosen == choice.if_chosen) // player picked the matching choice
 			{
-				case 1:
-					start_dialogue("hoot","Oh?```````` Is someone there?","happy")
-					break;
-			case 2:
-				start_dialogue("player", "Hey!", "happy", 0.50)
-				break;
-			case 3:
-				start_dialogue("hoot", global.name + "?`````` Is that you?", "normal", 0.50)
-				break;
-			case 4:
-				start_dialogue("hoot", "Why,``` it's so nice to see you again!", "normal", 0.50)
-				break;
-			case 5:
-				start_dialogue("hoot", "What's going on now?", "normal", 0.50)
-				break;
-			case 6:
-				showBox = true;
-				break;
-			case 7:
-				if chosen = 2
+			   var line = choice.then;
+			   start_dialogue(line.speaker, line.dialog, line.expression, line.type_speed ?? 0.35);
+			}
+			else
+			{
+				// Fallback branch
+				if (variable_struct_exists(choice, "else"))
 				{
-					start_dialogue("hoot", "Oh, it's okay!", "normal", 0.50)
+					var jobs = choice.else.switch_job;
+					var job_line;
+				
+					if (variable_struct_exists(jobs, global.job))
+						job_line = variable_struct_get(jobs, global.job); // ✅ safe access
+					else
+						job_line = jobs.default; // fallback
+
+					start_dialogue(job_line.speaker, job_line.dialog, job_line.expression, job_line.type_speed ?? 0.35);
 				}
-				else
-				{
-					switch (global.job)
-					{
-						case "construction":
-							start_dialogue("hoot", "Ooh! Construction worker.````` Must be hard work.", "normal", 0.50)
-							break;
-						case "scientist":
-							start_dialogue("hoot", "A scientist!`````` I knew you would listen to what I told you about chemistry.", "normal", 0.50)
-							break;
-						case "wildlife":
-							start_dialogue("hoot", "A wildlife protector!````` I love animals!", "normal", 0.50)
-							break;
-						default:
-							start_dialogue("hoot", "I know, right?", "normal", 0.50)
-							break;
-					}
-				}
-				showBox = false;
-				break;
-			case 8:
-				start_dialogue("hoot", "Well, see ya!```` Nice talking to you.", "normal", 0.35)
-				break;
-			default:
+			}
+			
+			// handle optional showBox toggle
+			if (variable_struct_exists(entry, "showBox"))
+				showBox = entry.showBox;
+		}
+        else if (variable_struct_exists(entry, "showBox"))
+		{
+            showBox = entry.showBox;
+		}
+		
+        else if (variable_struct_exists(entry, "end"))
+		{
+			
+			if get_json_file(_path,"end_action") == "hoot"
+			{
 				global.flags[0] += 1;
-				global.cutscene = false;
-				hover = false;
-				dialog = 0;
 				doorbellNoise = 0;
-				showBox = false;
-				break;
-		}
-		break;
-	case "hoot01":
-			switch (dialog)
-			{
-				case 1:
-					start_dialogue("hoot","Hello, " + global.name + "!","happy")
-					break;
-				case 2:
-					start_dialogue("player", "Hey!", "happy", 0.50)
-					break;
-				case 3:
-					start_dialogue("hoot", "Thanks for visiting!", "normal", 0.50)
-					break;
-				case 4:
-					start_dialogue("hoot", "Let me know if you need anything.", "normal", 0.50)
-					break;
-				default:
-					global.flags[0] += 1;
-					global.cutscene = false;
-					hover = false;
-					dialog = 0;
-					doorbellNoise = 0;
-					showBox = false;
-					break;
-		}
-		break;
-	}
+                showBox = false;
+				if variable_instance_exists(self,"hover") hover = false;
+			}
+            global.cutscene = false;
+            dialog = 0;
+        }
+    }
 }

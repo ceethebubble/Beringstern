@@ -1,0 +1,10 @@
+{
+  "end_action": "hoot",
+  "dialogue": [
+    { "speaker": "hoot", "dialog": "Hey, {global.name}!", "expression": "happy" },
+    { "speaker": "player", "dialog": "Hey!", "expression": "happy", "type_speed": 0.5 },
+    { "speaker": "hoot", "dialog": "Thanks for visiting!", "expression": "normal", "type_speed": 0.5 },
+    { "speaker": "hoot", "dialog": "Let me know if you need anything. ```````G'night!", "expression": "normal", "type_speed": 0.5 },
+    { "end": true }
+  ]
+}

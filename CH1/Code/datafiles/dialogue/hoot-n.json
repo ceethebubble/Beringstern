@@ -1,0 +1,28 @@
+{
+  "end_action": "hoot",
+  "dialogue": [
+    { "speaker": "hoot", "dialog": "Yawn...```````` Is someone there?", "expression": "happy" },
+    { "speaker": "player", "dialog": "Hey!", "expression": "happy", "type_speed": 0.5 },
+    { "speaker": "hoot", "dialog": "{global.name}?`````` Is that you?", "expression": "normal", "type_speed": 0.5 },
+    { "speaker": "hoot", "dialog": "Why,``` it's so nice to see you again!", "expression": "normal", "type_speed": 0.5 },
+    { "speaker": "hoot", "dialog": "I'm just working a lot here. What're you up to so late at night?", "expression": "normal", "type_speed": 0.5 },
+    { "showBox": true },
+    {
+      "choice": {
+        "if_chosen": 2,
+        "then": { "speaker": "hoot", "dialog": "Yeah, it's okay!", "expression": "normal", "type_speed": 0.5 },
+        "else": {
+          "switch_job": {
+            "construction": { "speaker": "hoot", "dialog": "Ooh! Construction worker.````` Must be hard work.", "expression": "normal", "type_speed": 0.5 },
+            "scientist": { "speaker": "hoot", "dialog": "A scientist!`````` I knew you would listen to what I told you about chemistry.", "expression": "normal", "type_speed": 0.5 },
+            "wildlife": { "speaker": "hoot", "dialog": "A wildlife protector!````` I love animals!", "expression": "normal", "type_speed": 0.5 },
+            "default": { "speaker": "hoot", "dialog": "I know, right?", "expression": "normal", "type_speed": 0.5 }
+          }
+        }
+      },
+      "showBox": false
+    },
+    { "speaker": "hoot", "dialog": "Well, see ya!```` Nice talking to you.", "expression": "normal", "type_speed": 0.35 },
+    { "end": true }
+  ]
+}
