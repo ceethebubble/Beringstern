@@ -74,13 +74,16 @@ if statsOpened
 {
 	var _file = file_text_open_read("scripts/drawStats.txt");
 	var _lines = [];
+	if (_file >= 0)
+	{
+		while (!file_text_eof(_file))
+		{
+			array_push(_lines, file_text_read_string(_file));
+			file_text_readln(_file);
+		}
 
-	while (!file_text_eof(_file)) {
-	    array_push(_lines, file_text_read_string(_file));
-	    file_text_readln(_file);
+		file_text_close(_file);
 	}
-
-	file_text_close(_file);
 	
 	draw_set_alpha(1)
 	
@@ -89,19 +92,21 @@ if statsOpened
 	draw_set_valign(fa_middle)
 	draw_set_color(c_teal)
 	draw_set_font(fnt_fancy)
-	draw_text(565,120,"STATS")
+	draw_text(555,120,"STATS")
 	
-	draw_sprite_ext(spr_gui_stats_icon,0,460,190,0.5,0.5,0,c_white,1);
-	draw_sprite_ext(spr_gui_stats_icon,1,470,290,0.5,0.5,0,c_white,1);
-	draw_sprite_ext(spr_gui_stats_icon,2,470,390,0.5,0.5,0,c_white,1);
-	draw_sprite_ext(spr_gui_icon_money_single,0,460,560,0.3,0.3,0,c_white,1);
+	draw_sprite_ext(spr_gui_stats_icon,0,_lines[1],_lines[2],real(_lines[0]),real(_lines[0]),0,c_white,1);
+	draw_sprite_ext(spr_gui_stats_icon,1,_lines[3],_lines[4],real(_lines[0]),real(_lines[0]),0,c_white,1);
+	draw_sprite_ext(spr_gui_stats_icon,2,_lines[5],_lines[6],real(_lines[0]),real(_lines[0]),0,c_white,1);
+	draw_sprite_ext(spr_gui_icon_money_single,0,real(_lines[3])-10,real(_lines[6])+10,0.3,0.3,0,c_white,1);
 	
 	draw_set_font(fnt_default)
-	draw_text_transformed(real(_lines[0]),real(_lines[1]),global.strength,real(_lines[3]),real(_lines[3]),0)
-	draw_text_transformed(real(_lines[0]) + 20,real(_lines[4]),global.speed,real(_lines[3]),real(_lines[3]),0)
-	draw_text_transformed(real(_lines[0]) + 30,real(_lines[5]),global.toughness,real(_lines[3]),real(_lines[3]),0)
-	draw_text_transformed(real(_lines[0]) + 30,590,global.money,real(_lines[3]),real(_lines[3]),0)
-	draw_text_transformed(real(_lines[0])-110 + 30,700,string(global.hp)+"/"+string(global.maxhp)+" HP",real(_lines[3])/1.5,real(_lines[3])/1.5,0)
+	
+	draw_text_transformed(565,215,round(global.strength),0.4,0.4,0)
+	draw_text_transformed(790,210,round(global.speed),0.4,0.4,0)
+	draw_text_transformed(580,305,round(global.toughness),0.4,0.4,0)
+	draw_text_transformed(820,300,round(global.money),0.4,0.4,0)
+	draw_text_transformed(600,375,string(round(global.hp)) + "/" + string(round(global.maxhp)) + " HP",0.4,0.4,0)
+	draw_text_transformed(500,700,"Click anywhere to exit",0.4,0.4,0)
 }
 
 if inventoryOpened

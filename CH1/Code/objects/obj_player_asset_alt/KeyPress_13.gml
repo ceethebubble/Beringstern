@@ -18,4 +18,4 @@ global.shoeAvatarG = avatarShoeG
 global.shoeAvatarB = avatarShoeB
 
 //show_message("You picked "+string(global.name_of_avatar)+": "+string(global.avatar)+", Name: "+string(global.name))
-fade_to_room(rm_tutorial)
+fade_to_room(rm_stats_tutorial)

@@ -3439,7 +3439,10 @@
   "sdfSpread":8,
   "size":72.0,
   "styleName":"Light",
-  "textureGroupId":null,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
   "TTFName":"",
   "usesSDF":false,
 }
