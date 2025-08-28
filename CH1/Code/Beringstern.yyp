@@ -506,6 +506,7 @@
     {"id":{"name":"spr_block_unused","path":"sprites/spr_block_unused/spr_block_unused.yy",},},
     {"id":{"name":"spr_borders","path":"sprites/spr_borders/spr_borders.yy",},},
     {"id":{"name":"spr_cgr_logo","path":"sprites/spr_cgr_logo/spr_cgr_logo.yy",},},
+    {"id":{"name":"spr_curved_rectangle","path":"sprites/spr_curved_rectangle/spr_curved_rectangle.yy",},},
     {"id":{"name":"spr_debug_0","path":"sprites/spr_debug_0/spr_debug_0.yy",},},
     {"id":{"name":"spr_debug_1","path":"sprites/spr_debug_1/spr_debug_1.yy",},},
     {"id":{"name":"spr_debug_2","path":"sprites/spr_debug_2/spr_debug_2.yy",},},

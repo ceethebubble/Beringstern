@@ -235,6 +235,7 @@
     {"name":"spr_block_unused","order":14,"path":"sprites/spr_block_unused/spr_block_unused.yy",},
     {"name":"spr_borders","order":5,"path":"sprites/spr_borders/spr_borders.yy",},
     {"name":"spr_cgr_logo","order":2,"path":"sprites/spr_cgr_logo/spr_cgr_logo.yy",},
+    {"name":"spr_curved_rectangle","order":10,"path":"sprites/spr_curved_rectangle/spr_curved_rectangle.yy",},
     {"name":"spr_debug_0","order":15,"path":"sprites/spr_debug_0/spr_debug_0.yy",},
     {"name":"spr_debug_1","order":16,"path":"sprites/spr_debug_1/spr_debug_1.yy",},
     {"name":"spr_debug_2","order":17,"path":"sprites/spr_debug_2/spr_debug_2.yy",},

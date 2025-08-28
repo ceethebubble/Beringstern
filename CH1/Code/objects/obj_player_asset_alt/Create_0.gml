@@ -3,20 +3,20 @@ avatar_index = 1;
 global.char_index = 0;
 
 avatarBaseR = 1.0;
-avatarBaseG = 0.3;
-avatarBaseB = 0.5;
+avatarBaseG = 1.0;
+avatarBaseB = 1.0;
 
 avatarOutlineR = 0.8;
-avatarOutlineG = 0.29;
-avatarOutlineB = 0.5;
+avatarOutlineG = 0.8;
+avatarOutlineB = 0.8;
 
-avatarFaceR = 0.0
-avatarFaceG = 0.3
-avatarFaceB = 0.5
+avatarFaceR = 0.7
+avatarFaceG = 0.7
+avatarFaceB = 0.7
 
-avatarShoeR = 0.0
-avatarShoeG = 0.3
-avatarShoeB = 0.5
+avatarShoeR = 0.6
+avatarShoeG = 0.6
+avatarShoeB = 0.6
 
 image_alpha = 0;
 
@@ -37,3 +37,17 @@ sel_y = cy;
 wheel_surface = -1;
 
 gray = 255;
+
+baseSelX = sel_x
+baseSelY = sel_y
+baseGray = 255
+faceSelX = sel_x
+faceSelY = sel_y
+faceGray = 178.5
+shoeSelX = sel_x
+shoeSelY = sel_y
+shoeGray = 153
+
+darkX = 0
+darkY = 0
+darkScale = 0

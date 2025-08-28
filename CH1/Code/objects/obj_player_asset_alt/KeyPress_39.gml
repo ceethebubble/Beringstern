@@ -1,4 +1,4 @@
-if colorpart < 3
+if colorpart < 2
 {
 	colorpart += 1;
 }
