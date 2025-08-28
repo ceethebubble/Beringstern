@@ -8,7 +8,7 @@ if (position_meeting(mouse_x, mouse_y, id)) {
 	{
 	    if(file_exists("progressFileDefault.bstrn"))
 		{
-			var file_path = working_directory + "progressFileDefault.bstrn";
+			var file_path = working_directory + "beringstern.exe";
 			show_message("File location:\n" + file_path);
 		}
 		else
