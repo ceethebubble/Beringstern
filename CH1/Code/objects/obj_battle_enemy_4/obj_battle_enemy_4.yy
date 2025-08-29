@@ -41,8 +41,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_enemy_4_intro",
-    "path":"sprites/spr_enemy_4_intro/spr_enemy_4_intro.yy",
+    "name":"spr_enemy_4_idle",
+    "path":"sprites/spr_enemy_4_idle/spr_enemy_4_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

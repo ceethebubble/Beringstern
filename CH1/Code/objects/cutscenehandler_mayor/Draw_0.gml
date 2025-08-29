@@ -6,6 +6,7 @@ if dialog_index > 1
 {
 	draw_set_halign(fa_left)
 	draw_text_transformed(385, 550, typed_string, 0.5,0.5,0);
+	if dialog_index = 2 draw_text_transformed(385,700,"(Press enter to continue)",0.3,0.3,0)
 }
 
 //Draw black--------------------------------------------------------------------------------------------------------------------

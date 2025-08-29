@@ -14,7 +14,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"proffesor",
-    "path":"folders/Objects/game/gui/proffesor.yy",
+    "path":"folders/Objects/game/controllers and gui/proffesor.yy",
   },
   "parentObjectId":null,
   "persistent":false,

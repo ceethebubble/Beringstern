@@ -9,6 +9,7 @@ if (punch)
 }
 else
 {
+	hitPunch = false
 	image_speed = 0;
 	if global.cutscene
 		image_index = 0;
@@ -41,7 +42,7 @@ if !global.cutscene or decuts
 			global.playerx += playerWalkSpeed;
 			sprite_index = right;
 			image_speed = playerWalkSpeed / 3;
-			image_xscale = -0.8;
+			image_xscale = -scale;
 		}
 	
 		// Left movement
@@ -50,7 +51,7 @@ if !global.cutscene or decuts
 			global.playerx -= playerWalkSpeed;
 			sprite_index = left;
 			image_speed = playerWalkSpeed / 3;
-			image_xscale = 0.8;
+			image_xscale = scale;
 		}
 	
 		// Down movement
@@ -59,7 +60,7 @@ if !global.cutscene or decuts
 			global.playery += playerWalkSpeed;
 			sprite_index = down;
 			image_speed = playerWalkSpeed / 3;
-			image_xscale = 0.8;
+			image_xscale = scale;
 		}
 		
 		// Up movement
@@ -68,7 +69,7 @@ if !global.cutscene or decuts
 			global.playery -= playerWalkSpeed;
 			sprite_index = up;
 			image_speed = playerWalkSpeed / 3;
-			image_xscale = 0.8;
+			image_xscale = scale;
 		}
 	
 		// --- SPRINTING ---

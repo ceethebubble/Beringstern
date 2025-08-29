@@ -97,6 +97,9 @@ global.battlegroup = 0
 global.styleGoal = 20
 global.aiPath = ""
 
+global.level = 0
+global.xp = 0
+
 global.gameTime = current_hour + (current_minute / 60)
 
 if (file_exists("progressFileDefault.bstrn"))
@@ -114,3 +117,5 @@ if (!file_exists("main.ini"))
 
 surface_resize(application_surface, 1366, 768);
 if !instance_exists(obj_gameControl) instance_create_depth(0,0,0,obj_gameControl)
+
+global.songs[0] = get_song_from_file("The Basics")

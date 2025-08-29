@@ -1,0 +1,17 @@
+{
+ "movement": "still",
+ "hover": false,
+ "hover_amount": 0,
+ "move_speed": 0,
+ "spare-object": "obj_hazard_cottonball",
+ "spare-power": 0.4,
+ "spare-method": "object-greenify",
+ "intro": false,
+ "attacks":
+ [
+  {
+   "id": "obj_hazard_cottonball",
+   "chance": 100
+  }
+ ]
+}

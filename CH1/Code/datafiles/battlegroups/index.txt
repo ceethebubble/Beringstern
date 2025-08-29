@@ -3,3 +3,4 @@ overworld/EnemyBlightbotA.json
 overworld/EnemyBlightbotB.json
 overworld/EnemyBlightbotC.json
 overworld/EnemyBlightbotD.json
+overworld/Dummy.json

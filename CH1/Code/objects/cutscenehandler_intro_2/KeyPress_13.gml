@@ -83,7 +83,5 @@ if dialog = 17
 }
 if dialog = 18
 {
-	global.level = 0
-	global.xp = 0;
-	fade_to_room(rm_spawn)
+	fade_to_room(rm_tutorial)
 }

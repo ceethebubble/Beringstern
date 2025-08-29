@@ -1,0 +1,14 @@
+{
+    "id": 5,
+    "background": "tutorial",
+    "music": "msc_enemyt_overworld",
+    "battle_object": "obj_battle_dummy",
+    "opponent_name": "Dummy",
+    "opponent_maxhp": 20,
+    "opponent_icon_sprite": "spr_dialog_dummy",
+    "playerx": 1024,
+    "playery": 650,
+    "battletime": 40,
+    "styleGoal": 5,
+    "ai": "dummy"
+}

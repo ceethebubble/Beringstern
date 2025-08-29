@@ -44,6 +44,17 @@ switch (global.room_statement) {
             audio_play_sound(msc_proffesor, 1, true);
         }
         break;
+		
+	case "tutorial":
+        // Check if the overworld music is already playing
+        if (!audio_is_playing(global.songs[0])) {
+            // Pause all other audio if necessary
+            audio_stop_all();
+            // Play the overworld music
+			global.musicsnd = global.songs[0]
+            audio_play_sound(global.songs[0], 1, true);
+        }
+        break;
 
     // Add more cases here for other room types if needed
     // case "other_room_type":
@@ -64,6 +75,8 @@ if room = rm_wildlife
 	global.room_statement = "wildlife";
 else if room = rm_proffesor
 	global.room_statement = "proffesor";
+else if room = rm_tutorial
+	global.room_statement = "tutorial"
 else
 	global.room_statement = "overworld"
 	

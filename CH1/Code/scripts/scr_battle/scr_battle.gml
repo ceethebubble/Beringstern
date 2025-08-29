@@ -85,6 +85,7 @@ function scr_setup_ai()
 	move_speed = get_json_file(_file,"move_speed");
 	move_direction = 1; // 1 = right, -1 = left
 	last_direction = 1; // previous direction.
+	punched = false
 }
 
 function scr_ai()
@@ -168,6 +169,36 @@ function scr_ai()
 					}
 				}
 				break;
+			case "still":
+				patrol_distance = 0.1;
+				move_speed = 0.01
+				var still_x = enemy_x + move_speed * move_direction;
+				
+				if (place_free(still_x, enemy_y))
+				{
+					enemy_x = still_x;
+				}
+				else
+				{
+					if (!move_in_progress)
+					{
+						move_in_progress = true;
+						move_direction = 0;
+						alarm[0] = room_speed * random_range(0.3, 0.8);
+					}
+				}
+				// Switch direction at patrol edges
+				if (enemy_x >= start_x + patrol_distance and move_direction = 1) or (enemy_x <= start_x - patrol_distance and move_direction = -1)
+				{
+					if (!move_in_progress)
+					{
+						move_in_progress = true;
+						last_direction = move_direction;
+						move_direction = 0;
+						alarm[0] = room_speed * random_range(0.5, 1.5); // pause before turning
+					}
+				}
+				break;
 		}
 	}
 }
@@ -228,7 +259,7 @@ function scr_battle_steps()
 			scr_ai()
 			
 			// Sprite Handling
-			if !attacking
+			if !attacking and not punched
 			{
 				sprite_index = idle_sprite;
 			}
@@ -315,5 +346,31 @@ function scr_enemy_create()
 				instance_create_depth(x+introX,y+introY,depth,obj_hazard_laser_ball_D)
 				break;
 		}
+	}
+}
+
+//ADITIONS/MODS/MODIFICATIONS
+
+/// @function scr_bm_punch
+/// @desc Adds an animation for your enemy when they get hurt.
+
+function scr_bm_punch()
+{	
+	if obj_player.hitPunch and not attacking and not sparing and not dying
+	{
+		image_speed = 1
+		sprite_index = punch_sprite
+		punched = true
+	}
+	
+	if sprite_index = punch_sprite and image_index >= image_number - 1
+	{
+		punch = false
+		sprite_index = idle_sprite
+	}
+	
+	if sprite_index != punch_sprite
+	{
+		punch = false
 	}
 }

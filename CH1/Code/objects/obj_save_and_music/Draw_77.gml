@@ -1,5 +1,8 @@
-shader_set(shdr_daynight)
-shader_set_uniform_f(shader_get_uniform(shdr_daynight, "u_time"), global.gameTime);
+if room != rm_tutorial
+{
+	shader_set(shdr_daynight)
+	shader_set_uniform_f(shader_get_uniform(shdr_daynight, "u_time"), global.gameTime);
+}
 var base_w = 1366;
 var base_h = 768;
 

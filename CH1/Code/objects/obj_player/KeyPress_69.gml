@@ -6,7 +6,7 @@ if room == rm_battle && !punch && !global.cutscene
 	
 	var box_width  = sprite_width + 40; // total width of the box (left to right)
 	var box_height = sprite_height + 40; // total height of the box (top to bottom)
-	var facing_offset = (0 - sign(image_xscale)) * 25; // 10 pixels to the left or right
+	var facing_offset = (0 - sign(image_xscale)) * 25; // 25 pixels to the left or right
 
 	var left_box   = x - box_width / 2 + facing_offset;
 	var right_box  = x + box_width / 2 + facing_offset;
@@ -15,6 +15,7 @@ if room == rm_battle && !punch && !global.cutscene
 	
 	if ( collision_rectangle(left_box, top_box, right_box, bottom_box, obj_battle.battle_object, false, true) )
 	{
+		hitPunch = true
 		global.opponent_hp -= ( global.strength + 1 ) * 1.5
 	}
 	

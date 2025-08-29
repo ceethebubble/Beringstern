@@ -26,8 +26,14 @@ x = global.playerx;
 y = global.playery;
 
 playerWalkSpeed = 5.5;
-image_yscale = 0.8;
-image_xscale = 0.8;
+if room != rm_tutorial
+{
+	image_yscale = 0.8;
+	image_xscale = 0.8;
+}
+
+scale = (image_xscale + image_yscale) / 2
+
 collisionSpeed = playerWalkSpeed + 6;
 shader_reset()
 global.cutscene = false;
@@ -49,6 +55,7 @@ showKey = false;
 enterSize = 0.5;
 
 punch = false
+hitPunch = false
 
 decuts = false
 

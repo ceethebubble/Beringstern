@@ -1,1 +1,1 @@
-url_open("https://github.com/ceethebubble/Beringstern-CH1/wiki")
+url_open("https://github.com/ceethebubble/Beringstern/wiki")

@@ -1,6 +1,6 @@
 if !global.cutscene
 {
 	sprite_index = right;
-	image_xscale = -0.8;
+	image_xscale = -scale;
 	punch = false;
 }
