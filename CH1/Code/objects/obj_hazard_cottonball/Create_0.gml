@@ -5,7 +5,8 @@ drain = 0.5 // how long to drain style points
 styleRadius = 180 // how big the style points radius is
 
 alarm[0] = 3 * room_speed
-alarm[1] = room_speed
+
+rotation = 0
 
 // do NOT change!
 

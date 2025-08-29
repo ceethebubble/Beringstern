@@ -18,8 +18,8 @@
   "name":"obj_tutorial_controller",
   "overriddenProperties":[],
   "parent":{
-    "name":"controllers and gui",
-    "path":"folders/Objects/game/controllers and gui.yy",
+    "name":"tutorial",
+    "path":"folders/Objects/game/controllers and gui/tutorial.yy",
   },
   "parentObjectId":null,
   "persistent":false,

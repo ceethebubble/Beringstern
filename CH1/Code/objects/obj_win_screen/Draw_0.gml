@@ -32,6 +32,7 @@ shader_reset()
 draw_set_font(fnt_pixel)
 draw_set_halign(fa_left)
 draw_set_color(c_white)
+draw_set_valign(fa_middle)
 draw_text_transformed(480,96,"RESULTS",1.5,1.5,0)
 if (showResults)
 {
@@ -45,6 +46,26 @@ if (showResults)
 }
 
 finalScoreScale += ( 0.42 - finalScoreScale ) / 5
+
+if global.battlegroup == 5 && global.ending == 1
+{
+	global.flags[10] = true
+	draw_set_color(c_white)
+	draw_set_font(fnt_fancy)
+	draw_set_halign(fa_center)
+	draw_set_valign(fa_middle)
+	draw_set_alpha(1)
+	draw_text_transformed(room_width/2,room_height - 100,wrap_text("Great job! Now let's try sparing.",900,0.4),0.4,0.4,0)
+}
+else if global.battlegroup == 5 && global.ending == 2
+{
+	draw_set_color(c_white)
+	draw_set_font(fnt_fancy)
+	draw_set_halign(fa_center)
+	draw_set_valign(fa_middle)
+	draw_set_alpha(1)
+	draw_text_transformed(room_width/2,room_height - 100,wrap_text("You are ready to start your journey!",900,0.4),0.4,0.4,0)
+}
 
 // EASTER EGGS! :D
 

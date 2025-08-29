@@ -1,6 +1,7 @@
-if !global.cutscene 
+if !global.cutscene
 {
-	saveFile()
+	if global.room != rm_tutorial
+		saveFile()
 	audio_sound_gain(global.musicsnd,1,50)
 }
 else

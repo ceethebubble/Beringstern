@@ -38,12 +38,4 @@ else if volume < 0
 	
 audio_sound_gain(music,volume,0)
 
-if global.playery > 1280 && fading == 0
-{
-	fading = 1
-	global.flags[6] += 1
-	show_debug_message("Flee!")
-	fade_to_room(global.room)
-}
-
 if not global.debug global.gameTime = current_hour + (current_minute / 60)

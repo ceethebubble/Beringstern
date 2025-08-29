@@ -1,4 +1,4 @@
-if room == rm_battle && !punch && !global.cutscene
+if room == rm_battle && !punch && !global.cutscene && (global.battlegroup != 5 or !global.flags[10])
 {
 	audio_sound_pitch( sfx_punch, random_range(0.5, 2) )
 	play_sfx(sfx_punch)

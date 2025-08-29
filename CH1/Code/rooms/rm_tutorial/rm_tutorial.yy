@@ -11,12 +11,12 @@
     {"name":"inst_8D3192A","path":"rooms/rm_tutorial/rm_tutorial.yy",},
     {"name":"inst_140E73B5","path":"rooms/rm_tutorial/rm_tutorial.yy",},
     {"name":"inst_23D33C1B","path":"rooms/rm_tutorial/rm_tutorial.yy",},
-    {"name":"inst_265B820B","path":"rooms/rm_tutorial/rm_tutorial.yy",},
     {"name":"inst_73B3FE09","path":"rooms/rm_tutorial/rm_tutorial.yy",},
     {"name":"inst_7629032D","path":"rooms/rm_tutorial/rm_tutorial.yy",},
     {"name":"inst_7BF09FAA","path":"rooms/rm_tutorial/rm_tutorial.yy",},
     {"name":"inst_513732C1","path":"rooms/rm_tutorial/rm_tutorial.yy",},
     {"name":"inst_609C4064","path":"rooms/rm_tutorial/rm_tutorial.yy",},
+    {"name":"inst_265B820B","path":"rooms/rm_tutorial/rm_tutorial.yy",},
   ],
   "isDnd":false,
   "layers":[

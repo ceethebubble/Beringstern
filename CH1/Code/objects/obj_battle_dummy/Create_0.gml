@@ -4,12 +4,17 @@ image_xscale = 0.4
 image_yscale = 0.4
 attack_offset = 30
 idle_sprite = spr_dummy_idle
-attack_sprite = spr_dummy_idle
+attack_sprite = spr_dummy_attack
 spare_sprite = spr_dummy_spare
 spare_sound = sfx_enemy_1_spare
 kill_sprite = spr_dummy_killed
 kill_sound = sfx_dummy_kill
 punch_sprite = spr_dummy_punched
+
+if global.flags[10]
+	instance_create_depth(x,y,depth,obj_tutorial_controller_3)
+else
+	instance_create_depth(x,y,depth,obj_tutorial_controller_2)
 
 scr_enemy_create()
 

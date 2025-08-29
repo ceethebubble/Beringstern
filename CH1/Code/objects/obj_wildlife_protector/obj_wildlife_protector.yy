@@ -14,8 +14,8 @@
   "name":"obj_wildlife_protector",
   "overriddenProperties":[],
   "parent":{
-    "name":"controllers and gui",
-    "path":"folders/Objects/game/controllers and gui.yy",
+    "name":"jobs",
+    "path":"folders/Objects/game/controllers and gui/jobs.yy",
   },
   "parentObjectId":null,
   "persistent":false,

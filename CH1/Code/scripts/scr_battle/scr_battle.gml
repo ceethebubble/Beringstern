@@ -234,7 +234,7 @@ function scr_battle_steps()
 	depth = -y
 	if introDone
 	{
-		if get_json_file(_file,"spare-method") == "object-greenify" if place_meeting(x,y,asset_get_index(get_json_file(_file,"spare-object"))) && global.opponent_hp >= global.opponent_maxhp green += real(get_json_file(_file,"spare-power"))
+		if get_json_file(_file,"spare-method") == "object-greenify" if place_meeting(x,y,asset_get_index(get_json_file(_file,"spare-object"))) && global.opponent_hp >= global.opponent_maxhp && global.flags[10] = true green += real(get_json_file(_file,"spare-power"))
 		if global.opponent_maxhp != global.opponent_hp green = 0
 		
 		time_ += 1 / room_speed

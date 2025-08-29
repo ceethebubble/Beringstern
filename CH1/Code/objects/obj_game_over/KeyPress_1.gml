@@ -3,5 +3,8 @@ if (!stopspammingbro)
 	stopspammingbro = true
 	audio_stop_all()
 	global.hp = global.maxhp
-	fade_to_room(global.room)
+	if global.room = rm_tutorial
+		start_encounter()
+	else
+		fade_to_room(global.room)
 }

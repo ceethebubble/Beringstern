@@ -6,4 +6,3 @@ else
 {
 	audio_resume_sound(global.sounddialog)
 }
-show_debug_message("Dialogging: "+string(global.dialogging))

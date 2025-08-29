@@ -10,5 +10,6 @@ function scr_flags()
 	global.flags[7] = false // 7. Another tracker for the first encounter
 	global.flags[8] = false // 8. Discovered flee
 	global.flags[9] = false // 9. Found construction paper
+	global.flags[10] = false // 10. Discovered kill in Dummy fight
 	//Add more flags as needed!
 }
