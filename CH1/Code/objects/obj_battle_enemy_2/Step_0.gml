@@ -6,13 +6,21 @@ if not dying and not sparing
 	if (point_distance(x, y, obj_player.x, obj_player.y) <= (obj_player.sprite_width * 1.2))
 	{
 		if !(global.opponent_hp < global.opponent_maxhp)
+		{
+			if !audio_is_playing(sfx_charge) audio_play_sound(sfx_charge,0,false)
 			green += 0.005
+		}
 		else
+		{
+			audio_stop_sound(sfx_charge)
 			green -= 0.01
+		}
+		
 		global.stylishPoints += 0.25
 	}
 	else
 	{
+		audio_stop_sound(sfx_charge)
 		green -= 0.002
 	}
 
@@ -69,6 +77,10 @@ if not dying and not sparing
 		alarm[1] = room_speed;
 	}
 
+}
+else
+{
+	audio_stop_sound(sfx_charge)
 }
 
 if global.opponent_hp <= 0 and not dying

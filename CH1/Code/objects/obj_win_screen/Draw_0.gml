@@ -40,8 +40,8 @@ if (showResults)
 	draw_text_transformed(288,384,"HP " + hpNumbers,1,0.8,0)
 	draw_text_transformed(160,448,"STYLE " + string(styleRatio*999),1,0.8,0)
 	
-	draw_sprite_ext(spr_gui_ratings,finalRatingFake,1050,400,0.8 - finalScoreScale,0.8 - finalScoreScale,0,c_black,0.4 - (finalScoreScale/2)) //shadow
-	draw_sprite_ext(spr_gui_ratings,finalRatingFake,1024,384,finalScoreScale,finalScoreScale,0,c_white,1) //real thing
+	draw_sprite_ext(spr_gui_ratings,finalRatingFake,1050,370,0.8 - finalScoreScale,0.8 - finalScoreScale,0,c_black,0.4 - (finalScoreScale/2)) //shadow
+	draw_sprite_ext(spr_gui_ratings,finalRatingFake,1024,354,finalScoreScale,finalScoreScale,0,c_white,1) //real thing
 	draw_text_transformed(948,512,"RANK",0.85,0.65,0)
 }
 
