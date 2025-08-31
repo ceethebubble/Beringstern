@@ -119,3 +119,4 @@ surface_resize(application_surface, 1366, 768);
 if !instance_exists(obj_gameControl) instance_create_depth(0,0,0,obj_gameControl)
 
 global.songs[0] = get_song_from_file("The Basics")
+global.songs[1] = get_song_from_file("Buried Machinery")
