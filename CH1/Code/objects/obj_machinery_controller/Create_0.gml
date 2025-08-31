@@ -29,7 +29,7 @@ video_path = "music/covers/Buried Machinery.mp4";
 videoData = -1
 vidExists = false
 vidOpen = -1
-HP = global.maxhp / 2
+HP = global.maxhp / 4
 
 if (file_exists(video_path))
 {
