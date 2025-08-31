@@ -1,1 +1,0 @@
-if clickSpaceNow clickedSpace = true

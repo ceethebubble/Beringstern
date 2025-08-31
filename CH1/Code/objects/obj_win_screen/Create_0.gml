@@ -132,6 +132,7 @@ if finalRating != 5
 	alarm[1] = (2 * room_speed)
 	
 audio_sound_pitch(sfx_dong,1)
+global.xp += finalRating * 30
 
 fading = 0
 

@@ -128,12 +128,15 @@ function loadFile(fade = true,room_go = true)
 			show_message("Error: TOUGHNESS has not saved!")
 			global.toughness = 0;
 		}
+		
 		global.char_index = _struct.character;
 		
 		if _struct.save_room != rm_science or _struct.save_room != rm_wildlife
 			global.room = _struct.save_room
 		else
 			global.room = rm_workstation
+			
+		global.rating = _struct.rating
 		
 		if room_go
 		{

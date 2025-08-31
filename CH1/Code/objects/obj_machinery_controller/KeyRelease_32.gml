@@ -1,0 +1,1 @@
+if clickSpaceNow clickedSpace = true else clickedWhileNot = true
