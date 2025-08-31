@@ -1,3 +1,13 @@
+videoData = video_draw()
+if videoData != -1
+{
+	if videoData[0] == 0
+	{
+		draw_surface_ext(videoData[1],0,0,1366/1280,768/720,0,c_white,1)
+	}
+}
+
+draw_set_color(c_black)
 if global.debug draw_text(60,60,clickSpaceNow)
 if global.debug draw_text(500,60,beat_phase)
 
@@ -20,3 +30,6 @@ else
 	makeBox(100 - rectangleSize,500 + (rectangleSize / 1.5),700 + rectangleSize,600 - (rectangleSize / 1.5),c_blue,6);
 	makeBox(100 - rectangleSize,500 + (rectangleSize / 1.5),percentMultiplied - rectangleSize,600 - (rectangleSize / 1.5),c_yellow,0);
 }
+
+draw_set_color(c_black)
+draw_text(60,60,"HP: " + string(HP))
