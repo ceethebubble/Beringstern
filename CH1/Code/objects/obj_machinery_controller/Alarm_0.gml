@@ -1,1 +1,0 @@
-clickNow = "3"

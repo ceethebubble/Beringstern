@@ -7,7 +7,6 @@ if (position_meeting(mouse_x, mouse_y, id)) {
    if mouse_check_button(mb_left)
 	{
 		audio_stop_all()
-		global.debug = true;
 		room_goto(rm_machinery_music)
    }
 }

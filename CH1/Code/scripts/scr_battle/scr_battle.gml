@@ -18,10 +18,6 @@ function scr_battle_load(_index)
 		// Split by lines
 		var index_list = string_split(index_text, "|");
 		
-		show_debug_message("Index List:" + string(index_list))
-		
-		show_debug_message("Array Length of Index List: " + string(array_length(index_list)))
-		
 		if _index <= array_length(index_list) - 2
 		{
 			var battle_file = index_list[_index]; // get the JSON file path
@@ -42,7 +38,6 @@ function scr_battle_load(_index)
 				file_text_readln(file_id2); // move to next line
 			}
 			
-			show_debug_message("JSON and location:\n" + "battlegroups/" + battle_file + "\n" + json_text)
 			var data = json_parse(json_text);
 			
 			// Close the file after reading
@@ -80,7 +75,6 @@ function start_encounter()
 
 function scr_setup_ai()
 {
-	show_debug_message("AI Path: " + string(global.aiPath))
 	var _file = string(global.aiPath)
 	move_speed = get_json_file(_file,"move_speed");
 	move_direction = 1; // 1 = right, -1 = left
